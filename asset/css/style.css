@@ -1,0 +1,265 @@
+/*
+Theme Name:My Folio
+Author Name: My Folio
+version:1.0
+
+
+Table of content
+--------------------------------
+1.Common Css
+2.Nav Section
+3.Banner Section
+4.About Section
+5.Service Section
+6.My Work Section
+7.Contact
+ */
+
+ /* Common Css Start */
+ h1,h2,h3,h4,h5,h6,
+ p,
+ span{
+     margin: 0;
+     padding: 0;
+ }
+ a,a:hover{
+     text-decoration: none;
+ }
+ body{
+    font-family: 'Open Sans', sans-serif;
+ }
+ .form-control:focus{
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: initial;
+ }
+ :root{
+     --m-m:#d9dbdb;
+     --rr-g:#02918c;
+     --ff-f:#ffffff;
+     --cc-c:crimson;
+     --tt-t:#0b1016;
+     --ee-e:#cfc91f;
+     --tt-b:#7e8287;
+ }
+ /* Common Css End */
+/* Navbar start */
+#my_nav{
+    background-color: var(--rr-g);
+}
+#my_nav #main_menu ul li a{
+    color: var(--ff-f);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 8px 25px;
+    margin: 10px 0;
+    transition: all linear .6s;
+}
+#my_nav #main_menu ul li:hover a{
+    background-color: var(--cc-c);
+    color: var(--ff-f);
+    border-radius: 10px;
+}
+/* Navbar end */
+/* Banner start */
+#banner .banner_item{
+    height: 700px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+    color: var(--ff-f);
+}
+#banner .banner_item::after{
+    position: absolute;
+    content:'';
+    background-color: rgba(0,0,0,0.64);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#banner .banner_item .banner_content h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_item .banner_content h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .banner_item .banner_content p{
+    font-size: 18px;
+}
+#banner .banner_item .banner_content a{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--tt-t);
+    background-color: #cfc91f;
+    display: inline-block;
+    padding: 14px 30px;
+    transition: all linear .6s;
+}
+#banner .banner_item .banner_content img{
+    display: block;
+    margin:  38px auto;
+    padding: 50px;
+}
+#banner .banner_item .banner_content a:hover{
+    background-color: #02918c;
+}
+/* Banner end */
+ /* About start */
+ #about_me{
+     padding: 98px 0;
+ }
+#about_me .sec_info h2{
+   font-family: 'Fredoka', sans-serif;
+   color:var(--rr-g);
+   text-transform: uppercase;
+
+}
+#about_me .sec_info p{
+    margin-top:30px;
+    color: var(--tt-b);
+}
+#about_me .about_item_1 .about_item{
+    border-right: 1px solid #d9dbdb;
+    margin-top: 80px;
+}
+#about_me .about_item_1 .about_item h3{
+    padding: 36px 0;
+    color: var(--tt-b);
+}
+#about_me .about_item_1 .about_item p{
+    color:var(--tt-b) ;
+}
+#about_me .about_item_1 .about_last_item .about_item{
+    border: none;
+}
+#about_me .sec_info span{
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/*About end  */
+/* Service start */
+#services{
+    background-color: #f0f0e8;
+
+}
+
+#services .sec_info h2{
+    margin-top: 52px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
+    color:var(--rr-g);
+    text-transform: uppercase;
+
+ }
+/* Service end */
+/*  My Work start */
+#my_work .work_item .workImg{
+    width: 100%;
+}
+#my_work .work_item{
+    position: relative;
+}
+#my_work .work_item .workDetails{
+    position: absolute;
+    left: 27px;
+    right: 27px;
+    top: 20px;
+    bottom: 20px;
+    background-color: var(--rr-g);
+    padding-top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s linear;
+}
+#my_work .work_item:hover .workDetails{
+    opacity: 1;
+    visibility: visible;
+}
+#my_work .work_item .workDetails h3{
+    color: #ffffff;
+}
+#my_work .work_item .workDetails p{
+    color: #ffffff;
+    margin-top: 18px;
+    font-size: 16px;
+}
+#my_work .work_item img{
+    width: 100%;
+    display: block;
+}
+#my_work .sec_info h2{
+    margin-top: 52px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
+    color:var(--rr-g);
+    text-transform: uppercase;
+   
+}
+#my_work .sec_info h5{
+    color: #898c91;
+    padding: 30px;
+}
+#my_work .sec_info p{
+        color: #898c91;
+        font-size: 26px;
+} 
+/*  My Work end */
+/* contact start */
+#contact_me .sec_info h2{
+    margin-top: 52px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
+    color:var(--rr-g);
+    text-transform: uppercase;
+}
+#contact_me .sec_info h5{
+    color: #898c91;
+    padding: 30px;
+}
+#contact_me .contact_form{
+    background-color: #0b0b0b;
+}
+#contact_me .sec_info p{
+    color: #898c91;
+}
+.contact_form input,
+.contact_form textarea{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ddd !important;
+    border-radius: 0;
+    text-align: center;
+    color: #ffffff !important;
+}
+#contact_me .contact_form input[type="submit"]{
+    background-color: #cfc91f;
+    margin-top: 69px;
+    width: 198px;
+    height: 48px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all .4s linear;
+    color: #0b1016;
+}
+#contact_me .contact_form input[type="submit"]:hover{
+   border-radius: 1px;
+   background-color: #02918c;
+}
+/* contact end */
+/* footer start */
+footer {
+    background-color: black;
+    color: #7e8287;
+}
+/* footer end */
+

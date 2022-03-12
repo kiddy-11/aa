@@ -1,0 +1,8 @@
+@media (min-width:992px) and (max-width:1199.99){
+    #banner .banner_item .banner_content h1 {
+        font-size: 37px;
+        letter-spacing: 34px;
+        padding-bottom: 23px;
+        margin-top: 18px;
+    }
+}
